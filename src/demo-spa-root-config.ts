@@ -10,7 +10,6 @@ const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({
   routes,
   loadApp({ name }) {
-    console.log("Register application", name);
     return System.import(name);
   },
 });
